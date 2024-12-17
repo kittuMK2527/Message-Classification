@@ -1,0 +1,407 @@
+/* Main Heading Style */
+.main-heading {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 1.5rem;
+    padding: 0 15px;
+}
+
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Message Card Styles */
+.message-card {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+}
+
+.message-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Category-specific styling */
+.message-card.OTP {
+    border-left: 5px solid #007bff;
+    background-color: #f8f9ff;
+}
+
+.message-card.LOGISTICS {
+    border-left: 5px solid #28a745;
+    background-color: #f8fff9;
+}
+
+.message-card.BILL {
+    border-left: 5px solid #ffc107;
+    background-color: #fffdf8;
+}
+
+.message-card.PROMOTIONAL {
+    border-left: 5px solid #17a2b8;
+    background-color: #f8fcff;
+}
+
+.message-card.spam {
+    border: 2px solid #dc3545;
+    background-color: #fff8f8;
+}
+
+.message-card.not-spam {
+    border: 1px solid #28a745;
+}
+
+/* Badge Styles */
+.category-badge {
+    font-size: 0.9em;
+    padding: 6px 12px;
+    margin-right: 10px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.spam-badge {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.confidence-badge {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Highlight Styles */
+.highlighted {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.highlight-otp {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.highlight-tracking {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.highlight-amount {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.highlight-promo {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px 15px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+textarea.form-control {
+    min-height: 100px;
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 20px;
+    padding: 8px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Bill Actions */
+.bill-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Updated Pay Now Button Styles */
+.bill-button.btn-primary {
+    padding: 8px 20px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+.bill-button.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    transform: translateY(-2px);
+}
+
+.bill-button.btn-primary .badge {
+    background-color: white !important;
+    color: #0d6efd !important;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+/* Other Bill Buttons */
+.bill-button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.bill-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Payment Modal Styles */
+.modal-content {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: 3px solid #0d6efd;
+    padding: 15px 20px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+    padding: 15px 20px;
+}
+
+/* Payment Method Cards */
+.payment-method-card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.payment-method-card:hover {
+    border-color: #0d6efd;
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.payment-method-card.selected {
+    border-color: #0d6efd;
+    background-color: #e7f1ff;
+    box-shadow: 0 2px 5px rgba(13,110,253,0.2);
+}
+
+.payment-method-card i {
+    font-size: 24px;
+    color: #0d6efd;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.payment-method-card span {
+    display: block;
+    font-size: 14px;
+    color: #495057;
+}
+
+/* Payment Form Styles */
+.payment-section {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid #dee2e6;
+}
+
+/* Info Section Styles */
+.extracted-info {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border: 1px solid #dee2e6;
+}
+
+.info-item {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Timestamp Style */
+.timestamp {
+    font-size: 0.8em;
+    color: #6c757d;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Modal Pay Now Button */
+#payButton {
+    padding: 8px 24px;
+    font-weight: 500;
+    min-width: 100px;
+    justify-content: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .bill-actions {
+        flex-direction: column;
+    }
+
+    .bill-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .category-badges {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .modal-dialog {
+        margin: 10px;
+    }
+
+    .payment-method-card {
+        margin-bottom: 10px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message-card {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Loading Spinner */
+.fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Form Select Styles */
+.form-select {
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Message Content Styles */
+.message-content {
+    line-height: 1.6;
+    color: #212529;
+}
+
+/* Focus States */
+.btn:focus, .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+}
+
+/* Disabled States */
+.btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
